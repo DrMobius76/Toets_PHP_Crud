@@ -22,10 +22,11 @@ try {
  */
 
 $sql = "SELECT Id
-              ,Voornaam
-              ,Tussenvoegsel
-              ,Achternaam
-        FROM Persoon";
+              ,Merk
+              ,Model
+              ,Topsnelheid
+              ,Prijs
+        FROM dureauto";
 
 //Bereid de de query voor met de method prepare
 $statement = $pdo->prepare($sql);
@@ -41,9 +42,10 @@ $tableRows = "";
 
 foreach($result as $info) {
     $tableRows .= "<tr>
-                        <td>$info->Voornaam</td>
-                        <td>$info->Tussenvoegsel</td>
-                        <td>$info->Achternaam</td>
+                        <td>$info->Merk</td>
+                        <td>$info->Model</td>
+                        <td>$info->Topsnelheid</td>
+                        <td>$info->Prijs</td>
                         <td>
                             <a href='delete.php'>
                                 <img src='img/b_drop.png' alt='cross'>
@@ -56,10 +58,10 @@ foreach($result as $info) {
 
 <table border='1'>
     <thead>
-        <th>Voornaam</th>
-        <th>Tussenvoegsel</th>
-        <th>Achternaam</th>
-        <th></th>
+        <th>Merk</th>
+        <th>Model</th>
+        <th>Topsnelheid</th>
+        <th>Prijs</th>
     </thead>
     <tbody>
         <?php echo $tableRows; ?>

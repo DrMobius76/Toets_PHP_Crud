@@ -12,14 +12,28 @@
     <h1>PDO CRUD</h1>
 
     <form action="create.php" method="post">
-        <label for="firstname">Voornaam:</label><br>
+    <!--<label for="firstname">Merk</label><br>
         <input type="text" name="firstname" id="firstname"><br>
 
-        <label for="infix">Tussenvoegsel:</label><br>
+        <label for="infix">Model</label><br>
         <input type="text" name="infix" id="infix"><br>
 
-        <label for="lastname">Achternaam:</label><br>
+        <label for="lastname">Topsnelheid</label><br>
         <input type="text" name="lastname" id="lastname"><br>
+
+        <input type="submit" value="Verstuur">-->
+
+        <label for="Merk">Merk:</label><br>
+        <input type="text" name="Merk" id="Merk"><br>
+
+        <label for="Model">Model:</label><br>
+        <input type="text" name="Model" id="Model"><br>
+
+        <label for="Topsnelheid">Topsnelheid:</label><br>
+        <input type="text" name="Topsnelheid" id="Topsnelheid"><br>
+
+        <label for="Prijs">Prijs:</label><br>
+        <input type="text" name="Prijs" id="Prijs"><br>
 
         <input type="submit" value="Verstuur">
     </form>
